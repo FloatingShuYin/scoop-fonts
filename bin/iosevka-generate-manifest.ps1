@@ -1,7 +1,7 @@
 $templateString = @"
 {
     "version": "0.0",
-    "license": "MIT",
+    "license": "SIL Open Font License v1.1",
     "homepage": "https://github.com/be5invis/Iosevka",
     "url": " ",
     "hash": " ",
