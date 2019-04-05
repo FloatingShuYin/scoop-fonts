@@ -1,9 +1,9 @@
 {
-    "version": "2.0.2",
+    "version": "2.2.0",
     "license": "SIL Open Font License v1.1",
     "homepage": "https://github.com/be5invis/Iosevka",
-    "url": "https://github.com/be5invis/Iosevka/releases/download/v2.0.2/iosevka-term-ss10-2.0.2.zip",
-    "hash": "8c14cd18c265f45ea0f386dd7548fa76b112f98fca1b56ff26dd69d877ccc5c1",
+    "url": "https://github.com/be5invis/Iosevka/releases/download/v2.2.0/iosevka-term-ss10-2.2.0.zip",
+    "hash": "b5b3c98f2dace7da74a1dcecf89d270ac36ca9e60b92d81f7118caf0ff71295e",
     "checkver": "github",
     "depends": "sudo",
     "autoupdate": {
