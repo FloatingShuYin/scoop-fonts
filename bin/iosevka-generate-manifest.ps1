@@ -65,11 +65,16 @@ $fontNames = @(
     "iosevka-term-ss11"
 )
 
+
+$bucket = "$PSScriptRoot\..\bucket"
+if (-not (Test-Path $bucket))
+{
+    mkdir -Path $bucket
+}
+
 # Generate manifests
 $fontNames | ForEach-Object {
     $manifest = $_ -replace "^\d+-", ""
-    $templateString -replace "%name", $_ | Out-File -FilePath "$PSScriptRoot\..\$manifest-font.json" -Encoding utf8
+    $content = ($templateString -replace "%name", $_)
+    [System.IO.File]::WriteAllText("$bucket\$manifest-font.json", $content)
 }
-
-# Use scoop's checkver script to autoupdate the manifests
-& $psscriptroot\checkver.ps1 * -u
