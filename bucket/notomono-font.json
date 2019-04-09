@@ -1,5 +1,5 @@
 {
-    "version": "2017-09-19-",
+    "version": "2017-09-19",
     "license": "SIL Open Font License v1.1",
     "homepage": "https://www.google.com/get/noto/",
     "url": "https://noto-website-2.storage.googleapis.com/pkgs/NotoMono-hinted.zip",
@@ -10,7 +10,7 @@
     },
     "checkver": {
         "url": "https://github.com/googlei18n/noto-fonts/releases/latest",
-        "re": "\\/releases\\/tag\\/(?:v|V)?([\\d-]+)"
+        "re": "\\/releases\\/tag\\/(?:v|V)?(\\d+\\-\\d+\\-\\d+)"
     },
     "installer": {
         "script": [

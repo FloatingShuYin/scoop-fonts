@@ -1,6 +1,6 @@
 $templateString = @"
 {
-    "version": "2017.10",
+    "version": "0.0",
     "license": "SIL Open Font License v1.1",
     "homepage": "https://www.google.com/get/noto/",
     "url": "https://noto-website-2.storage.googleapis.com/pkgs/%name.zip",
@@ -11,7 +11,7 @@ $templateString = @"
     },
     "checkver": {
         "url": "https://github.com/googlei18n/noto-fonts/releases/latest",
-        "re":  "\\/releases\\/tag\\/(?:v|V)?([\\d-]+)"
+        "re":  "\\/releases\\/tag\\/(?:v|V)?(\\d+\\-\\d+\\-\\d+)"
     },
     "installer": {
         "script": [
