@@ -1,9 +1,9 @@
 {
-    "version": "2.2.0",
+    "version": "2.2.1",
     "license": "SIL Open Font License v1.1",
     "homepage": "https://github.com/be5invis/Iosevka",
-    "url": "https://github.com/be5invis/Iosevka/releases/download/v2.2.0/07-iosevka-type-slab-2.2.0.zip",
-    "hash": "480fe7576586f3f8c45492d074a30afc48e5d64115c39db0cc8c7989e522806c",
+    "url": "https://github.com/be5invis/Iosevka/releases/download/v2.2.1/07-iosevka-type-slab-2.2.1.zip",
+    "hash": "c221617bc47947e18b00094be92f780782b2066beb0d5f3667f805d9f8adf941",
     "checkver": "github",
     "depends": "sudo",
     "autoupdate": {

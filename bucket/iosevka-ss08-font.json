@@ -1,9 +1,9 @@
 {
-    "version": "2.2.0",
+    "version": "2.2.1",
     "license": "SIL Open Font License v1.1",
     "homepage": "https://github.com/be5invis/Iosevka",
-    "url": "https://github.com/be5invis/Iosevka/releases/download/v2.2.0/iosevka-ss08-2.2.0.zip",
-    "hash": "711b2c8420e07589ab45febc4c252c7783c017e6b176227cf105721fc007852d",
+    "url": "https://github.com/be5invis/Iosevka/releases/download/v2.2.1/iosevka-ss08-2.2.1.zip",
+    "hash": "763f74f422c6a3cb6e100105e5cbbe1c18df8d32ed2bd8cfb40d9539e07684d1",
     "checkver": "github",
     "depends": "sudo",
     "autoupdate": {
