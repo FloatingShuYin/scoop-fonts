@@ -16,7 +16,7 @@ $templateString = @"
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install `$app'\"; exit 1 }",
-            "Get-ChildItem `$dir | ForEach-Object {",
+            "Get-ChildItem `$dir -Filter \"*.ttf\" | ForEach-Object {",
             "    New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name `$_.Name.Replace(`$_.Extension, ' (TrueType)') -Value `$_.Name -Force | Out-Null",
             "    Copy-Item \"`$dir\\`$_\" -destination \"`$env:windir\\Fonts\"",
             "}"
@@ -25,7 +25,7 @@ $templateString = @"
     "uninstaller": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop uninstall `$app'\"; exit 1 }",
-            "Get-ChildItem `$dir | ForEach-Object {",
+            "Get-ChildItem `$dir -Filter \"*.ttf\" | ForEach-Object {",
             "    Remove-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name `$_.Name.Replace(`$_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
             "    Remove-Item \"`$env:windir\\Fonts\\`$(`$_.Name)\" -Force -ErrorAction SilentlyContinue",
             "}",
@@ -36,7 +36,6 @@ $templateString = @"
 "@
 
 $fontNames = @(
-    "Noto-hinted",
     "NotoColorEmoji-unhinted",
     "NotoEmoji-unhinted",
     "NotoMono-hinted"
