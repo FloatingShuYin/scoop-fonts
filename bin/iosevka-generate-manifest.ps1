@@ -40,31 +40,8 @@ $fontNames = @(
     "05-iosevka-slab",
     "06-iosevka-term-slab",
     "07-iosevka-type-slab",
-    "08-iosevka-cc-slab",
-    "iosevka-ss01",
-    "iosevka-ss02",
-    "iosevka-ss03",
-    "iosevka-ss04",
-    "iosevka-ss05",
-    "iosevka-ss06",
-    "iosevka-ss07",
-    "iosevka-ss08",
-    "iosevka-ss09",
-    "iosevka-ss10",
-    "iosevka-ss11",
-    "iosevka-term-ss01",
-    "iosevka-term-ss02",
-    "iosevka-term-ss03",
-    "iosevka-term-ss04",
-    "iosevka-term-ss05",
-    "iosevka-term-ss06",
-    "iosevka-term-ss07",
-    "iosevka-term-ss08",
-    "iosevka-term-ss09",
-    "iosevka-term-ss10",
-    "iosevka-term-ss11"
+    "08-iosevka-cc-slab"
 )
-
 
 $bucket = "$PSScriptRoot\..\bucket"
 if (-not (Test-Path $bucket))
